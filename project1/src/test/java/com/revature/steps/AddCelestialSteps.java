@@ -7,6 +7,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.time.Duration;
+
 public class AddCelestialSteps {
     @When("the user inputs valid planet creation data")
     public void the_user_inputs_valid_planet_creation_data() {
@@ -54,10 +56,10 @@ public class AddCelestialSteps {
         if (fileType.equals("GIF")){
             // set to GIF
             TestRunner.wait.until( d-> {
-                TestRunner.homePage.setPlanetImageInput("C:\\Users\\jacob\\Desktop\\RevatureWork\\project1\\src\\test\\resources\\Celestial-Images\\planetGIF.gif");
+                TestRunner.homePage.setPlanetImageInput("C:\\Users\\jacob\\Desktop\\Revature-Project1\\project1\\src\\test\\resources\\Celestial-Images\\planetGIF.gif");
                 return true;
             });
-//            TestRunner.homePage.setPlanetImageInput("C:\\Users\\jacob\\Desktop\\RevatureWork\\project1\\src\\test\\resources\\Celestial-Images\\planetGIF.gif");
+
         }
     }
 
@@ -114,11 +116,13 @@ public class AddCelestialSteps {
         // if GIF add the gif
         if(fileType.equals("GIF")){
             TestRunner.wait.until( d-> {
-                TestRunner.homePage.setMoonImageInput("C:\\Users\\jacob\\Desktop\\RevatureWork\\project1\\src\\test\\resources\\Celestial-Images\\planetGIF.gif");
+                TestRunner.homePage.setMoonImageInput("C:\\Users\\jacob\\Desktop\\Revature-Project1\\project1\\src\\test\\resources\\Celestial-Images\\planetGIF.gif");
                 return true;
             });
 
         }
+
+
     }
 
 

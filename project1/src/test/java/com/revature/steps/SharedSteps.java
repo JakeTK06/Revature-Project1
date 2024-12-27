@@ -17,7 +17,6 @@ public class SharedSteps {
         TestRunner.wait.until(ExpectedConditions.alertIsPresent());
         Alert a = TestRunner.driver.switchTo().alert();
         try {
-
             Assert.assertEquals(alert, a.getText());
         } finally {
             a.accept();

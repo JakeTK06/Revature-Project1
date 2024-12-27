@@ -6,7 +6,6 @@ Feature: Add planet or moon
     And the user is on the home page
 
   Scenario: User can add a new planet with valid data
-    #TODO: add valid planet creation data in step implementation
     When  the user inputs valid planet creation data
     And   the user submits planet creation data
     Then  the planet should be created
@@ -26,7 +25,7 @@ Feature: Add planet or moon
     |Exciting!! planet              |   |Invalid planet name|
     |Earth                          |   |Invalid planet name|
     |Venus -55_                     |GIF|Invalid file type  |
-    |Luna                           |GIF|Invalid planet name|
+    |Earth                          |GIF|Invalid planet name|
 
   Scenario: User can add a new moon with valid data
     #TODO: add valid moon creation data in step implementation
@@ -35,7 +34,7 @@ Feature: Add planet or moon
     Then  the moon should be created
     And   the table should be refresh with an extra moon
 
-  Scenario Outline: User cannot add a new planet with invalid data
+  Scenario Outline: User cannot add a new moon with invalid data
     When  the user inputs moon name "<moon>"
     And   the user inputs planet that own the moon "<owner num>"
     And   the user adds and image of file type "<image type>"

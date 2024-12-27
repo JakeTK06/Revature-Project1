@@ -151,7 +151,7 @@ public class HomePage {
     }
 
     public void setPlanetImageInput(String filePath){
-        planetNameInput.sendKeys(filePath);
+        planetImageInput.sendKeys(filePath);
     }
 
     public void setMoonNameInput(String name){
